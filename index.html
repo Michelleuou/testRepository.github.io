@@ -1,29 +1,40 @@
-<DOCTYPE html>
-  <html>
-    <head>
-      <title>My First Github Repository</title>
-      
-      </head>
-    <body>
-      <h1>This is my first Github Repository. I like Github so far. Similar to replit.</h1>
-      <h2>Hi, Mrs.Cruz, hope your having a nice day :)</h2>
-      <h3>My day was very nice. I had fun with my friends in US History. I miss them since we moved seats</h3>
-      <h4>I hope today I can review for my Algebra 2 test and pass. I also hope to see my cat once I get home.</h4>
-      <h5>Thank you for listening and have a nice rest of your day! :D</h5>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="image1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="image2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="image3.jpg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 
+<style>
+.slideshow-container {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+}
+.prev { left: 0; }
+.next { right: 0; }
+.fade {
+  animation: fade 1.5s;
+}
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+</style>
 
-
-
-      
-    </body>
-
-
-
-
-
-
-    
-
-
-    
-  </html>
