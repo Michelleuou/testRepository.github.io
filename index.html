@@ -1,40 +1,30 @@
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="image1.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="image2.jpg" style="width:100%">
-  </div>
-  <div class="mySlides fade">
-    <img src="image3.jpg" style="width:100%">
-  </div>
-  
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Slideshow</title>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="image1.jpg" alt="Description 1">
+        </div>
+        <div class="slide fade">
+            <img src="image2.jpg" alt="Description 2">
+        </div>
+        <div class="slide fade">
+            <img src="image3.jpg" alt="Description 3">
+        </div>
+        <!-- Add more slides as needed -->
+        
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
 
-<style>
-.slideshow-container {
-  position: relative;
-}
-.mySlides {
-  display: none;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-}
-.prev { left: 0; }
-.next { right: 0; }
-.fade {
-  animation: fade 1.5s;
-}
-@keyframes fade {
-  from {opacity: 0.4} 
-  to {opacity: 1}
-}
-</style>
+    <script src="script.js"></script>
+</body>
+</html>
+
 
